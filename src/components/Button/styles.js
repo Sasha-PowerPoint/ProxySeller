@@ -12,6 +12,7 @@ export const Button = styled.button`
   font-weight: 600;
   line-height: 1;
   padding: 1rem 1.6rem;
+  font-family:"Ysabeau SC", sans-serif;
   text-align: center;
   text-decoration: none #0d172a solid;
   text-decoration-thickness: auto;

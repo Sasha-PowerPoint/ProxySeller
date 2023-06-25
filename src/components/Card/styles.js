@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h4`
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 900;
 `;
 

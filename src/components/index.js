@@ -3,4 +3,5 @@ export * from './Button';
 export * from './Post';
 export * from './Heading';
 export * from './Page';
-export * from './AlbumsModal'
+export * from './AlbumsModal';
+export * from './Loader';

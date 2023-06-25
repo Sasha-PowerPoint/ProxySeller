@@ -12,7 +12,7 @@ import 'rodal/lib/rodal.css';
 
 const router = createHashRouter([
   {
-    path: '/',
+    path: '*',
     element: <Navigate  to="users" />
   },
   {

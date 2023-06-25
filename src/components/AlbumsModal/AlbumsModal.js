@@ -13,20 +13,22 @@ export const AlbumsModal = () => {
 
     const handleClose = useCallback(() => {navigate('/users')},[navigate]);
 
-    const currentUser = users && users.find((user) => console.log(user.id, +id) || user.id === +id);
+    const currentUser = users && users.find((user) => user.id === +id);
 
     const isVisible = matches[0].pathname.includes('albums');
 
     return (
-        <Rodal width={800} height={500} visible={isVisible} onClose={handleClose}>
-            {currentUser && <Styled.Title>{`${currentUser.username}'s albums`}</Styled.Title>}
-            <Styled.AlbumsWrapper>
-                {!isLoading && data.map((album) => (
-                    <Styled.AlbumItem>
-                        {album.title}
-                    </Styled.AlbumItem>
-                ))}
-            </Styled.AlbumsWrapper>
+        <Rodal className="albums-modal" width={800} height={500} visible={isVisible} onClose={handleClose}>
+            <Styled.ModalContentWrapper>
+                {currentUser && <Styled.Title>{`${currentUser.username}'s albums`}</Styled.Title>}
+                <Styled.AlbumsWrapper>
+                    {!isLoading && data.map((album) => (
+                        <Styled.AlbumItem key={album.id}>
+                            {album.title}
+                        </Styled.AlbumItem>
+                    ))}
+                </Styled.AlbumsWrapper>
+            </Styled.ModalContentWrapper>
         </Rodal>
     );
 };

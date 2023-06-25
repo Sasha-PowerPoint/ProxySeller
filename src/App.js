@@ -3,13 +3,12 @@ import { Provider } from 'react-redux';
 import { Users, Posts } from './containers';
 import { store } from './store';
 import {
-  createBrowserRouter,
   createHashRouter,
   RouterProvider,
   Navigate
 } from "react-router-dom";
+import GlobalStyle from './styles';
 import 'rodal/lib/rodal.css';
-import './App.css';
 
 const router = createHashRouter([
   {
@@ -29,6 +28,7 @@ const router = createHashRouter([
 function App() {
   return (
     <Provider store={store}>
+      <GlobalStyle />
       <RouterProvider router={router} />
     </Provider>
   );

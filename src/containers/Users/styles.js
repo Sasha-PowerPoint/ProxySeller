@@ -10,6 +10,16 @@ export const ListWrapper = styled.div`
 
 
     ${CardStyles.Wrapper} {
-        width: calc(100% / 3 - ${GAP}px * 2)
+        width: calc(100% / 3 - (${GAP}px * 2) / 3);
+
+        @media screen and (max-width: 1300px) {
+            width: calc(100% / 2 - ${GAP}px / 2);
+        }
+
+        @media screen and (max-width: 850px) {
+            width: 100%;
+        }
     }
+
+    
 `;

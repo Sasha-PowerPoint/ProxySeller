@@ -17,7 +17,7 @@ export const Posts = () => {
             <Link style={{ textDecoration: 'none' }} to='/users'>{'< Users'}</Link>
             {currentUser && <Heading>{`${currentUser.username}'s posts`}</Heading>}
             <Styled.ListWrapper>
-                {isLoading || data.map((post) => <Post {...post}/>)}
+                {isLoading || data.map((post) => <Post key={post.id} {...post}/>)}
             </Styled.ListWrapper>
         </Page>
     );

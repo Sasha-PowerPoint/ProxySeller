@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e54f86a26aa731528bf0",
+    "revision": "4d0242370431970819e7",
     "url": "/ProxySeller/static/css/main.2b743198.chunk.css"
   },
   {
-    "revision": "e54f86a26aa731528bf0",
-    "url": "/ProxySeller/static/js/main.6f5bf4e3.chunk.js"
+    "revision": "4d0242370431970819e7",
+    "url": "/ProxySeller/static/js/main.f4d249a0.chunk.js"
   },
   {
     "revision": "182ae436e6cb183baedb",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/ProxySeller/static/js/2.2f32de8a.chunk.js"
   },
   {
-    "revision": "faef28047b070d7251936160b5ebbe35",
+    "revision": "a6713fa59bdbd29653e69bbf62d225e0",
     "url": "/ProxySeller/index.html"
   }
 ];

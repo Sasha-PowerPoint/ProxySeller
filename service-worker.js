@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ProxySeller/precache-manifest.a9fb397594ccb8186cac05d0ba3d8b4e.js"
+  "/ProxySeller/precache-manifest.5bf0e32c7590a1c2fdabd5e45afd3bd2.js"
 );
 
 workbox.clientsClaim();

@@ -4,16 +4,17 @@ import { Users, Posts } from './containers';
 import { store } from './store';
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   Navigate
 } from "react-router-dom";
 import 'rodal/lib/rodal.css';
 import './App.css';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
-    element: <Navigate  to="/users" />
+    element: <Navigate  to="users" />
   },
   {
     path: "/users/:id?/albums?",
